@@ -6,14 +6,13 @@ namespace sandboxLinq
     {
         static void Main(string[] args)
         {
-            FilterData filterData = new FilterData();
-            filterData.CreateNewStudentList(30);
+            FilterData filterData = new FilterData(1000);
 
-            filterData.GetStudentsWithName("Svoboda");
-            filterData.CreateStudentsGroupByClub();
-            filterData.GetStudentsWithDiscount();
-            filterData.GetVIPSeasonTicketFans();
-            filterData.GetTeamWithMostUltraFans();
+            filterData.GetStudentsWithName("Bartoň");
+            //filterData.CreateStudentsGroupByClub();
+            //filterData.GetStudentsWithDiscount();
+            //filterData.GetVIPSeasonTicketFans();
+            //filterData.GetTeamWithMostUltraFans();
         }
     }
 }
